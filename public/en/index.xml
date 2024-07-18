@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screenwriter Mila Korshunova</title>
-    <link>https://example.org/en/</link>
+    <link>https://milakorshunova.com/en/</link>
     <description>Recent content on Screenwriter Mila Korshunova</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://example.org/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://milakorshunova.com/en/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

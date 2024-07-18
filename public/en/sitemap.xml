@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/en/categories/</loc>
+    <loc>https://milakorshunova.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-RU"
-                href="https://example.org/ru/categories/"
+                href="https://milakorshunova.com/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://example.org/en/categories/"
+                href="https://milakorshunova.com/en/categories/"
                 />
   </url><url>
-    <loc>https://example.org/en/</loc>
+    <loc>https://milakorshunova.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-RU"
-                href="https://example.org/ru/"
+                href="https://milakorshunova.com/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://example.org/en/"
+                href="https://milakorshunova.com/en/"
                 />
   </url><url>
-    <loc>https://example.org/en/tags/</loc>
+    <loc>https://milakorshunova.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru-RU"
-                href="https://example.org/ru/tags/"
+                href="https://milakorshunova.com/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://example.org/en/tags/"
+                href="https://milakorshunova.com/en/tags/"
                 />
   </url>
 </urlset>
