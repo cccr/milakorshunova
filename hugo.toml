@@ -1,0 +1,33 @@
+baseURL = 'https://milakorshunova.com/'
+copyright = 'Mila Korshunova'
+theme = 'mk'
+defaultContentLanguage = 'ru'
+defaultContentLanguageInSubdir = true
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  year = 'year'
+  genre = 'genre'
+  length = 'length'
+[languages]
+  [languages.ru]
+    contentDir = 'content/ru'
+    disabled = false
+    copyright = 'Мила Коршунова'
+    languageCode = 'ru-RU'
+    languageDirection = 'ltr'
+    languageName = 'Русский'
+    title = 'Сценарист Мила Коршунова'
+    weight = 1
+    [languages.ru.params]
+      subtitle = 'Сценарии и Контакты'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Screenwriter Mila Korshunova'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'Scripts, and Contacts'

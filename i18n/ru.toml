@@ -1,0 +1,14 @@
+translations = 'Translation is available'
+
+back = 'На главную страницу'
+
+by_length = 'по длительности'
+by_year = 'по годам'
+by_genre = 'по жанрам'
+
+length_short = 'Короткий метр'
+length_feature = 'Полный метр'
+length_pilot = 'Пилоты'
+
+genre_comedy = 'Комедия'
+genre_drama = 'Драма'

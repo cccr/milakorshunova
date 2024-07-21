@@ -1,0 +1,19 @@
+{{ define "header" }}
+{{ partial "header_single.html" . }}
+{{ end }}
+{{ define "main" }}
+{{ if .IsTranslated }}
+<h4>{{ T "translations" }}
+    {{ range .Translations }}
+    <a class="hover-white no-underline white-90" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
+    {{ end}}
+</h4>
+{{ end }}
+<h1>{{ .Title }}</h1>
+{{ with .Params.description }}
+<h2>{{ . }}</h2>
+{{ end }}
+<div class="script">
+    {{ .Content }}
+</div>
+{{ end }}

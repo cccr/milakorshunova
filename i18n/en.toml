@@ -1,0 +1,14 @@
+translations = 'Есть перевод'
+
+back = 'Back to the main page'
+
+by_length = 'by length'
+by_year = 'by year'
+by_genre = 'by genre'
+
+length_short = 'Shorts'
+length_feature = 'Features'
+length_pilot = 'TV Pilots'
+
+genre_comedy = 'Comedy'
+genre_drama = 'Drama'

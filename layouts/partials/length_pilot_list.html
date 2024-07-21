@@ -1,0 +1,10 @@
+<h3>{{ lang.Translate "length_pilot" . }}:</h3>
+<ul>
+{{ range $ind,$val := .Site.Taxonomies.length.pilot }}
+    {{ with $val.Page }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+{{ else }}
+Check other language
+{{ end }}
+</ul>

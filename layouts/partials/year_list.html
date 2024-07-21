@@ -1,0 +1,23 @@
+{{ $years := slice }}
+{{ range $name, $taxonomy := .Site.Taxonomies.year }}
+    {{ $years = $years | append $name }}
+{{ end }}
+
+{{ range $name := ($years | collections.Reverse) }}
+    {{ $taxonomy := $.Site.Taxonomies.year.Get $name }}
+    {{ $series_name := $name }}
+    {{/* $series_path := (printf "/year/%s" (urlize $name)) }}
+    {{ $series_page := site.GetPage $series_path }}
+    {{ if $series_page }}
+    {{ $series_name = $series_page.Title }}
+    {{ end */}}
+    <h3>{{ $series_name }}</h3>
+    {{/* <li><a href="{{ $series_path | relLangURL }}">{{ $series_name }} ({{ $taxonomy.Count }})</a> */}}
+        <ul>
+        {{ range $ind,$val := $taxonomy }}
+            {{ with $val.Page }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        {{ end }}
+        </ul>
+{{ end }}

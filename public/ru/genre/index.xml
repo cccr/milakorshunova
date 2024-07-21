@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genre on Сценарист Мила Коршунова</title>
+    <link>https://milakorshunova.com/ru/genre/</link>
+    <description>Recent content in Genre on Сценарист Мила Коршунова</description>
+    <generator>Hugo</generator>
+    <language>ru-RU</language>
+    <copyright>Мила Коршунова</copyright>
+    <lastBuildDate>Sun, 21 Jul 2024 12:47:24 -0400</lastBuildDate>
+    <atom:link href="https://milakorshunova.com/ru/genre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drama</title>
+      <link>https://milakorshunova.com/ru/genre/drama/</link>
+      <pubDate>Sun, 21 Jul 2024 12:47:24 -0400</pubDate>
+      <guid>https://milakorshunova.com/ru/genre/drama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comedy</title>
+      <link>https://milakorshunova.com/ru/genre/comedy/</link>
+      <pubDate>Sat, 20 Jul 2024 16:34:47 -0400</pubDate>
+      <guid>https://milakorshunova.com/ru/genre/comedy/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
