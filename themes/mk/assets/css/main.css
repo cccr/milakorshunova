@@ -19,7 +19,8 @@ header {
 }
 
 footer {
-    min-height: 50px;
+    min-height: 10rem;
+    vertical-align: top;
     background: #ffe200;
     color: #2e2e2e;
 }
