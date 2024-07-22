@@ -1,0 +1,28 @@
+{{- $category := split .category "_" -}}
+{{- $category_name := index (split .category "_" | first 1) 0 -}}
+{{- $category_value := index (split .category "_" | last 1) 0 -}}
+<h3>{{ lang.Translate .category . }}:</h3>
+<ul>
+{{ with .context }}
+{{ range $ind,$val := index (index .Site.Taxonomies $category_name) $category_value }}
+    {{ with $val.Page }}
+    <li>{{ if (len .Content) }}
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ else }}
+    <details><summary>{{ .LinkTitle }}</summary><p class="summary_details">{{ .Summary }}</p>
+        {{ if .IsTranslated }}
+        <h4>{{ T "translations" }}
+            {{ range .Translations }}
+            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
+            {{ end}}
+        </h4>
+        {{ end }}
+        </details>
+    {{ end }}
+    </li>
+    {{ end }}
+{{ else }}
+Check other language
+{{ end }}
+{{ end }}
+</ul>

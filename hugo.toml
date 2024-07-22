@@ -3,7 +3,6 @@ copyright = 'Mila Korshunova'
 theme = 'mk'
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
-ignoreFiles = ["content\en\scripts\friend\friend.md"]
 [params]
   email = 'mkorshunova.letters@gmail.com'
 [markup.goldmark.parser.attribute]

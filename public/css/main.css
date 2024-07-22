@@ -87,3 +87,22 @@ p:has(> #script_link) {
     padding: 0.5rem 1.5rem;
     white-space: initial;
 }
+
+details>summary {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    display: block;
+    list-style-type: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary::before {
+    content: '';
+}
+
+details[open]>summary::before {
+    content: '';
+}

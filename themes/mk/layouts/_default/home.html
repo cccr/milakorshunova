@@ -7,9 +7,9 @@
     <input type="radio" id="by_length" name="mytabs" checked="checked">
     <label for="by_length">{{ T "by_length" }}</label>
     <div class="tab">
-        <p>{{ partial "length_short_list.html" $ }}</p>
-        <p>{{ partial "length_pilot_list.html" $ }}</p>
-        <p>{{ partial "length_feature_list.html" $ }}</p>
+        <p>{{ partial "list.html" (dict "context" . "category" "length_short") }}</p>
+        <p>{{ partial "list.html" (dict "context" . "category" "length_pilot") }}</p>
+        <p>{{ partial "list.html" (dict "context" . "category" "length_feature") }}</p>
     </div>
     <input type="radio" id="by_year" name="mytabs">
     <label for="by_year">{{ T "by_year" }}</label>
@@ -19,8 +19,8 @@
     <input type="radio" id="by_genre" name="mytabs">
     <label for="by_genre">{{ T "by_genre" }}</label>
     <div class="tab">
-        <p>{{ partial "genre_comedy_list.html" $ }}</p>
-        <p>{{ partial "genre_drama_list.html" $ }}</p>
+        <p>{{ partial "list.html" (dict "context" . "category" "genre_comedy") }}</p>
+        <p>{{ partial "list.html" (dict "context" . "category" "genre_drama") }}</p>
     </div>
 </div>
 {{ partial "contacts.html" . }}

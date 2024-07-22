@@ -2,10 +2,10 @@
 {{ partial "header_single.html" . }}
 {{ end }}
 {{ define "main" }}
-{{ if .IsTranslated }}
+{{ if and .IsTranslated (len (index .Translations 0).Content) }}
 <h4>{{ T "translations" }}
     {{ range .Translations }}
-    <a class="hover-white no-underline white-90" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
+    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
     {{ end}}
 </h4>
 {{ end }}
