@@ -5,6 +5,10 @@
 #EEEEEE
 */
 
+a, a:visited {
+    color: #76ABAE;
+}
+
 body {
     font-family: "Rubik", sans-serif;
     background: #EEEEEE;
@@ -26,8 +30,6 @@ header {
 }
 
 footer {
-    min-height: 10rem;
-    vertical-align: top;
     background: #EEEEEE;
     color: #31363F;
 }
@@ -73,7 +75,6 @@ a.back_link {
 
 p.copyright {
     width: 100%;
-    font-size: 0.7em;
     text-align: center;
     font-optical-sizing: auto;
     font-weight: 300;
