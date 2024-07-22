@@ -1,13 +1,15 @@
 translations = 'Есть перевод'
 
 back = 'Back to the main page'
+contacts = 'Contacts'
+download = 'Download'
 
 by_length = 'by length'
 by_year = 'by year'
 by_genre = 'by genre'
 
 length_short = 'Shorts'
-length_feature = 'Features'
+length_feature = 'Feature films'
 length_pilot = 'TV Pilots'
 
 genre_comedy = 'Comedy'

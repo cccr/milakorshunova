@@ -1,6 +1,13 @@
+/*
+#222831
+#31363F
+#76ABAE
+#EEEEEE
+*/
+
 body {
     font-family: "Rubik", sans-serif;
-    background: #f0f0f0;
+    background: #EEEEEE;
     font-optical-sizing: auto;
     font-style: normal;
     min-height: 100vh;
@@ -14,15 +21,15 @@ header {
     min-height: 50px;
     display: grid;
     grid-template-columns: 1fr auto;
-    background: #014d86;
-    color: #f0f0f0;
+    background: #222831;
+    color: #EEEEEE;
 }
 
 footer {
     min-height: 10rem;
     vertical-align: top;
-    background: #ffe200;
-    color: #2e2e2e;
+    background: #EEEEEE;
+    color: #31363F;
 }
 
 main {
@@ -30,13 +37,17 @@ main {
     padding: 0 4rem;
 }
 
+.center {
+    text-align: center;
+}
+
 .lang {
     padding-right: 5rem;
     list-style-type: none;
 }
 
-.lang a{
-    color:#f0f0f0 !important;
+.lang a {
+    color: #f0f0f0 !important;
 }
 
 .script {
@@ -45,20 +56,34 @@ main {
     font-family: monospace;
     word-wrap: break-word;
     white-space: pre-wrap;
+    max-width: 48em;
 }
 
-a.back_link{
-    color:#f0f0f0 !important;
+a.back_link {
+    color: #f0f0f0 !important;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
 }
 
 p.copyright {
     width: 100%;
-    color: #424242;
     font-size: 0.7em;
     text-align: center;
-    font-family: "Noto Sans Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+p:has(> #script_link) {
+    border-left: 0.5rem solid #76ABAE;
+    border-radius: 0.125rem;
+    padding: 0.5rem 1.5rem;
+    white-space: initial;
 }

@@ -2,8 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
-    margin: 50px auto;
-    padding: 25px;
+    margin: 2rem auto;
 }
 
 .mytabs input[type="radio"] {
@@ -24,7 +23,7 @@
 
 .mytabs .tab {
     width: 100%;
-    padding: 0.1rem;
+    padding: 1rem 2rem;
     background: #fff;
     order: 1;
     display: none;

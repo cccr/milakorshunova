@@ -1,12 +1,13 @@
-+++
-title = 'Rip Van Winkle'
-date = 2024-07-19T18:13:42-04:00
-draft = false
-year = ['2023']
-genre = ['comedy']
-length = ['short']
-description = 'Based on a story by Washington Irving'
-+++
+RIP VAN WINKLE
+Written by
+Mila Korshunova
+{.center}
+
+Based on a story by Washington Irving
+
+mkorshunova.letters@gmail.com
+{.center}
+
 EXT. VILLAGE - DAY
 From a bird’s-eye view, a shining river flows on the right, mountains rise on the left, and a small village nestles in between.
 A view of the house: a yellow brick house with latticed windows and a weathercock as a rooster with a broken beak. A DOG is pushing through a fence with broken boards and entering the house.

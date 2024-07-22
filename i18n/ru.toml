@@ -1,6 +1,8 @@
 translations = 'Translation is available'
 
 back = 'На главную страницу'
+contacts = 'Контакты'
+download = 'Скачать'
 
 by_length = 'по длительности'
 by_year = 'по годам'
