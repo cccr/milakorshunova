@@ -1,0 +1,16 @@
+{{ with .Page.Resources.GetMatch "*.md" }}
+{{- $filename := index (split .Path "/" | last 1) 0 -}}
+<p>{{ T "download"}}:&nbsp;<a id="script_link"></a></p>
+{{- $display_filename := replace $filename ".md" (printf "_%s.md" .Lang) -}}
+<script>
+    var arrayBuffer = new ArrayBuffer(16);
+    var mimeString = "text/plain";
+    var dataView = `{{ replace .RawContent "{.center}" "" }}`;
+    var blob = new Blob([dataView], { type: mimeString });
+    var a = document.getElementById('script_link');
+    a.href = window.URL.createObjectURL(blob);
+    a.download = '{{ $display_filename }}';
+    a.textContent = '{{ $display_filename }}';
+</script>
+{{ .Content }}
+{{- end -}}

@@ -1,0 +1,15 @@
+{{- $filename := .Get "src" -}}
+{{- with .Page.Resources.Get $filename -}}
+<p>{{ T "download"}}:&nbsp;<a id="script_link"></a></p>
+<script>
+    var arrayBuffer = new ArrayBuffer(16);
+    var mimeString = "text/plain";
+    var dataView = `{{ replace .RawContent "{.center}" "" }}`;
+    var blob = new Blob([dataView], { type: mimeString });
+    var a = document.getElementById('script_link');
+    a.href = window.URL.createObjectURL(blob);
+    a.download = '{{ $filename }}';
+    a.textContent = '{{ $filename }}';
+</script>
+{{ .Content }}
+{{- end -}}

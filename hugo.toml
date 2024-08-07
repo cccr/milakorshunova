@@ -1,6 +1,6 @@
 baseURL = 'https://milakorshunova.com/'
 copyright = 'Mila Korshunova'
-theme = 'mk'
+theme = 'mk2'
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 [params]

@@ -1,0 +1,40 @@
+{{ define "header" }}
+    {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+
+    {{/* with resources.Get "images/cover.jpg" }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="image1">
+    {{ end */}}
+
+    <div class="about">
+        {{ .Content }}
+    </div>
+
+    <div class="taxonomy_tabs">
+        <div class="mytabs">
+            <input type="radio" id="by_length" name="mytabs" checked="checked">
+            <label for="by_length">{{ T "by_length" }}</label>
+            <div class="tab">
+                <p>{{ partial "list.html" (dict "context" . "category" "length_short") }}</p>
+                <p>{{ partial "list.html" (dict "context" . "category" "length_pilot") }}</p>
+                <p>{{ partial "list.html" (dict "context" . "category" "length_feature") }}</p>
+            </div>
+            <input type="radio" id="by_year" name="mytabs">
+            <label for="by_year">{{ T "by_year" }}</label>
+            <div class="tab">
+                <p>{{ partial "year_list.html" . }}</p>
+            </div>
+            <input type="radio" id="by_genre" name="mytabs">
+            <label for="by_genre">{{ T "by_genre" }}</label>
+            <div class="tab">
+                <p>{{ partial "list.html" (dict "context" . "category" "genre_comedy") }}</p>
+                <p>{{ partial "list.html" (dict "context" . "category" "genre_drama") }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">{{ partial "contacts.html" . }}</div>
+
+{{ end }}

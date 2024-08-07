@@ -1,0 +1,16 @@
+{{ define "header" }}
+{{ partial "header_single.html" . }}
+{{ end }}
+{{ define "main" }}
+{{ if and .IsTranslated (len (index .Translations 0).Content) }}
+<div class="script">{{ T "translations" }}:&nbsp;
+    {{- range .Translations -}}
+    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
+    {{- end -}}
+</div>
+{{ end }}
+
+<div class="script">
+    {{ .Content }}
+</div>
+{{ end }}
