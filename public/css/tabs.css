@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
-    margin: 2rem auto;
 }
 
 .mytabs input[type="radio"] {
@@ -13,8 +12,6 @@
     margin: 0 0.5rem 0;
     padding: 0.5rem 0.75rem 0.5rem;
     font-weight: bold;
-    text-decoration-line: underline;
-    text-decoration-style: dashed;
     border-radius: 1rem;
     cursor: pointer;
     background-color: #adf9ff;
