@@ -5,5 +5,6 @@ draft = false
 year = ['2023']
 genre = ['comedy']
 length = ['short']
+filename = 'Коршунова_Друг.pdf'
 +++
 {{< script >}}

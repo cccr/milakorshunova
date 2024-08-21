@@ -6,5 +6,6 @@ year = ['2023']
 genre = ['comedy']
 length = ['short']
 description = 'Based on a story by Washington Irving'
+filename = 'Rip-Van-Winkle-by-Mila-Korshunova.pdf'
 +++
 {{< script >}}

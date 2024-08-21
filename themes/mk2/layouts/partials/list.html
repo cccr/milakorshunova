@@ -7,13 +7,14 @@
 {{ range $ind,$val := index (index .Site.Taxonomies $category_name) $category_value }}
     {{ with $val.Page }}
     <li>{{ if (len .Content) }}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+
+        {{- $file_link := path.Join (path.Dir (strings.TrimRight "/" .RelPermalink)) (.Param "filename") -}}<a href="{{ $file_link }}" target="_blank">{{ .LinkTitle }}</a>
     {{ else }}
     <details><summary>{{ .LinkTitle }}</summary><p class="summary_details">{{ .Summary }}</p>
         {{ if .IsTranslated }}
         <h4>{{ T "translations" }}
             {{ range .Translations }}
-            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
+            {{index (split .RelPermalink "/" | last 1) 0}}<a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>&nbsp;
             {{ end}}
         </h4>
         {{ end }}
