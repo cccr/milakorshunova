@@ -24,7 +24,7 @@ body {
     background: #EEEEEE;
     font-optical-sizing: auto;
     font-style: normal;
-    min-height: 100vh;
+    min-height: 100svh;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
