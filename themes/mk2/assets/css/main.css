@@ -56,6 +56,7 @@ footer {
     padding: 0 4rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -68,6 +69,7 @@ footer {
 }
 
 .taxonomy_tabs {
+    padding-top: 2rem;
     grid-area: 2 / 1 / 2 / 3;
     font-size: large;
     color: #f0f0f0;
