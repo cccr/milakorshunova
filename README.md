@@ -1,1 +1,1 @@
-© 2024 Liudmila (Mila) Korshunova
+© 2024-2026 Liudmila (Mila) Korshunova
