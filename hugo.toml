@@ -1,18 +1,13 @@
 baseURL = 'https://milakorshunova.com/'
 copyright = 'Mila Korshunova'
 theme = 'mk2'
+disableKinds = ['taxonomy', 'term']
 defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 [params]
   email = 'mkorshunova.letters@gmail.com'
 [markup.goldmark.parser.attribute]
   block = true
-[taxonomies]
-  category = 'categories'
-  tag = 'tags'
-  year = 'year'
-  genre = 'genre'
-  length = 'length'
 [languages]
   [languages.ru]
     contentDir = 'content/ru'
